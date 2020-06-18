@@ -1,23 +1,6 @@
-gsap.registerPlugin(ScrollTrigger, scrollTo);
 
 ScrollTrigger.defaults({
  toggleActions: "restart pause reverse pause",
-});
-
-// LOGO PANEL
-
-gsap.from(".logocontainer div", {
-  scale:.5, 
-  ease:Bounce.easeOut,
-delay: .7,
-});
-gsap.to(".logocontainer div", {
-  y:20, 
-  ease:Bounce,
-delay: 2,
-  duration: 1,
-  repeat: -1,
-  yoyo: 1,
 });
 
 // PROGRESS HEADER
@@ -41,6 +24,21 @@ scrollTrigger: {
 tl.to(".progress-bar", {
   width: "100%",
 })
+
+// LOGO PANEL
+gsap.from(".logo-container div", {
+  scale:.5, 
+  ease:Bounce.easeOut,
+delay: .7,
+});
+gsap.to(".logo-container div", {
+  y:20, 
+  ease:Bounce,
+delay: 2,
+  duration: 1,
+  repeat: -1,
+  yoyo: 1,
+});
 
 
 // gsap.to(".logo div", {y:10, ease:Bounce.easeOut});
