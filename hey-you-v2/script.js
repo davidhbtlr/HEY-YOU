@@ -32,7 +32,7 @@ gsap.from(".logo-container div", {
 delay: .7,
 });
 gsap.to(".logo-container div", {
-  y:20, 
+  y:-20, 
   ease:Bounce,
 delay: 2,
   duration: 1,
