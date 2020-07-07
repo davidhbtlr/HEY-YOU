@@ -40,6 +40,7 @@ background-image: url("https://www.transparenttextures.com/patterns/absurdity.pn
   position: relative;
   vertical-align: top;
   align-content: center;
+  text-align: center;
 }
 
 .logobubble::before {
@@ -49,7 +50,7 @@ background-image: url("https://www.transparenttextures.com/patterns/absurdity.pn
   height: 16px;
   width:  20px;  
 position: absolute;
-  top: 260px;
+  bottom: -6px;
 right: 48%;
 box-shadow: 0 .5rem .8rem rgba(0, 0, 0, 0.3);
   transform:             rotate( 296deg ) skew( -35deg );
@@ -63,12 +64,24 @@ box-shadow: 0 .5rem .8rem rgba(0, 0, 0, 0.3);
 width: 250px; 
 }
 
+.arrow-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
 .scroll-down {
 position: relative;
-bottom: -15%;
+bottom: -110%;
+  ight: auto;
+  left: 45%;
 font-weight: 400;
 font-size: .75em;
 opacity: .75;
+  width: 3vh;
+-ms-transform: rotate(-90deg); /* IE 9 */
+transform: rotate(-90deg);
+  
 }
 
 [class^="sms"] {
@@ -89,7 +102,7 @@ display: flex;
   padding: 10px 18px;
   position: relative;
   vertical-align: top;
-  margin: 3vh 5vw 3vh 5vw;
+  margin: 2vh 5vw 2vh 5vw;
   
 }
 
@@ -164,6 +177,8 @@ align-items: flex-end;
   left: 35px;
 }
 
+
+
 .header h2 {
   text-align: center;
   font-size: 10px;
@@ -191,7 +206,7 @@ align-items: flex-end;
   line-height: 1.5;
   font-weight: 400;
   color: #192229;
-  font-size: 1.25em;
+  font-size: 1em;
   }
   
   body {
@@ -200,4 +215,8 @@ align-items: flex-end;
     scroll-snap-type: y mandatory;
   }
 
+  .bubble {
+  margin: 1vh 5vw 1vh 5vw;
+  }
+  
 }
