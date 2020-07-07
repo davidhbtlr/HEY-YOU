@@ -5,11 +5,10 @@ ScrollTrigger.defaults({
  
  // PROGRESS HEADER
  gsap.from(".header", {
-   scrollTrigger: ".sms1",
-   trigger: ".sms1",
+  delay: 1.5,
    y:-60,
    opacity: 0,
-   duration: 3,});
+   duration: 1.5,});
  
  const tl = gsap.timeline({
  scrollTrigger: {
@@ -41,38 +40,38 @@ ScrollTrigger.defaults({
  // PANEL ONE 
  
   gsap.from(".sms1 div", {
-
-    scrollTrigger: ".sms1", 
-   duration: 1,
+delay: .5,   
+duration: 1,
    scale: 1.2,
+   opacity: 0,
    ease:Elastic.easeOut});
  
   gsap.from(".sms2 div", {
-
-    scrollTrigger: ".sms2", 
-   duration: 1.25,
+ delay: .75,  
+ duration: 1,
    scale: 1.2,
+   opacity: 0,
   ease:Elastic.easeOut});
  
  
   gsap.from(".sms3 div", {
-
-    scrollTrigger: ".sms3", 
-   duration: 1.75,
+ delay: 1,  
+ duration: 1,
    scale: 1.2,
+   opacity: 0,
   ease:Elastic.easeOut});
  
   gsap.from(".sms4 div", {
-
-    scrollTrigger: ".sms4", 
-   duration: 2,
+ delay: 1.2,
+   duration: 1,
    scale: 1.2,
+   opacity: 0,
   ease:Elastic.easeOut});
  
 
  // PANEL TWO  
  gsap.to(".logo-container div", {
-  scrollTrigger: ".sms6", 
+  scrollTrigger: ".logo", 
   repeat: 1,
   duration: .75,
   y:5,
@@ -104,7 +103,12 @@ ScrollTrigger.defaults({
   ease:Bounce.easeOut});
  
  // PANEL FOUR 
- //  Animation for registration section goes here
+ gsap.to(".register div", {
+  scrollTrigger: ".register", 
+  repeat: 1,
+  duration: .75,
+  y:10,
+ ease:Bounce.easeOut});
 
  // PANEL FIVE
  
